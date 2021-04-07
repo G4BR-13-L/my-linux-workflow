@@ -17,7 +17,9 @@ PROGRAMAS_PARA_INSTALAR=(
   vlc
   vim
   flatpak
+  youtube-dl
 )
+
 
 ## Removendo travas eventuais do apt ##
 sudo rm /var/lib/dpkg/lock-frontend;
@@ -53,6 +55,8 @@ flatpak install flathub com.bitwarden.desktop
 flatpak install flathub org.telegram.desktop
 flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.github.alainm23.planner
+flatpak install flathub com.github.marktext.marktext
+flatpak install flathub com.axosoft.GitKraken
 
 
 # ----------------------------- PÓS-INSTALAÇÃO ----------------------------- #
