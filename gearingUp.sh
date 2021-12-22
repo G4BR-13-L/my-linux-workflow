@@ -24,9 +24,6 @@ PROGRAMAS_PARA_INSTALAR=(
 )
 
 
-## Removendo travas eventuais do apt ##
-sudo rm /var/lib/dpkg/lock-frontend;
-sudo rm /var/cache/apt/archives/lock;
 
 ## Atualizando o repositório ##
 sudo apt update -y;
@@ -68,7 +65,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash;
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-sudo nvm install node;
+sudo nvm install --lts;
 
 ### PYTHON
 sudo apt-get install software-properties-common;
@@ -84,7 +81,7 @@ sudo apt-get install texlive-full;
 ### JAVA OPENJDK
 sudo add-apt-repository ppa:openjdk-r/ppa;
 sudo apt-get update;
-sudo apt install openjdk-default;
+sudo apt install default-jdk;
 
 
 # ----------------------------- PÓS-INSTALAÇÃO ----------------------------- #
