@@ -21,6 +21,7 @@ PROGRAMAS_PARA_INSTALAR=(
   ranger
   qt5-style-kvantum 
   qt5-style-kvantum-themes
+  steam
 )
 
 
@@ -57,6 +58,25 @@ flatpak install flathub org.telegram.desktop;
 flatpak install flathub com.discordapp.Discord;
 flatpak install flathub com.jgraph.drawio.desktop;
 flatpak install flathub com.bitwarden.desktop;
+flatpak install flathub com.github.Anuken.Mindustry;                     
+flatpak install flathub com.github.HypatiaProject.hypatia;               
+flatpak install flathub com.github.alainm23.planner;                     
+flatpak install flathub com.github.cfcurtis.pdfstitcher;                 
+flatpak install flathub com.jgraph.drawio.desktop;                       
+flatpak install flathub com.todoist.Todoist;                             
+flatpak install flathub io.freetubeapp.FreeTube;                         
+flatpak install flathub org.darktable.Darktable;                         
+flatpak install flathub org.flozz.yoga-image-optimizer;                  
+flatpak install flathub org.freedesktop.Platform;                                  
+flatpak install flathub org.freedesktop.Platform;                                  
+flatpak install flathub org.gnome.EasyTAG;                               
+flatpak install flathub org.gnome.baobab;                                
+flatpak install flathub org.zotero.Zotero;                               
+flatpak install flathub us.zoom.Zoom;                                    
+
+## Instalando snaps
+sudo apt install snapd;
+sudo snap install authy;
 
 ## Desenvolvimento
 ### NODEJS
