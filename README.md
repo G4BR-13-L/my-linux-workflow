@@ -1,2 +1,3 @@
 # my-linux-workflow
-Automated enviroment is good!!
+
+Um script facilidator de configuração para toda vez que ir de um Ubuntu para o outro
