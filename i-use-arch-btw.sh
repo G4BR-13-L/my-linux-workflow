@@ -1,18 +1,7 @@
 
 # ----------------------------- REQUISITOS ----------------------------- #
 
-LIST_OF_APPS=" git gimp vlc vim flatpak inkscape kdenlive curl libreoffice ranger steam abntex2 colorpicker google-chrome helm-git insomnia jre kazam kwin-bismuth latex-mk libvterm01 nvm rpi-imager spotify texlive-latexindent-meta tuxguitar upscayl-bin visual-studio-code-bin yay yoshimi-git "
-DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
-REAPER="https://www.reaper.fm/files/6.x/reaper672_linux_x86_64.tar.xz"
-
-DIRETORIO_DOWNLOADS="$HOME/Downloads/programas"
-mkdir "$DIRETORIO_DOWNLOADS"
-wget -c "$REAPER" -P "$DIRETORIO_DOWNLOADS";
-
-
-## Configuração do git 
-git config --global user.email "gabriel.victorc13@gmail.com";
-git config --global user.name "G4BR-13-L";
+LIST_OF_APPS=" git gimp vlc vim flatpak inkscape kdenlive curl libreoffice ranger steam abntex2 colorpicker google-chrome helm-git kazam latex-mk libvterm01 nvmrpi-imager spotify texlive-latexindent-meta tuxguitar urw-arial visual-studio-code-bin yay yoshimi-git"
 
 ## Atualizando o repositório ##
 sudo pacman -Sy ;
@@ -20,7 +9,7 @@ sudo pacman -S yay ;
 yay -S $LIST_OF_APPS --noconfirm
 
 ## Instalando pacotes Flatpak ##
-flatpak install flathub com.bitwarden.desktop com.discordapp.Discord com.github.cfcurtis.pdfstitcher com.jetbrains.IntelliJ-IDEA-Community com.microsoft.Teams com.todoist.Todoist org.deluge_torrent.deluge org.flozz.yoga-image-optimizer org.gnome.EasyTAG org.telegram.desktop
+flatpak install flathub com.bitwarden.desktop com.discordapp.Discord  com.microsoft.Teams org.deluge_torrent.deluge org.flozz.yoga-image-optimizer org.gnome.EasyTAG org.telegram.desktop
 
 ## Instalando snaps
 yay -S snapd --noconfirm
